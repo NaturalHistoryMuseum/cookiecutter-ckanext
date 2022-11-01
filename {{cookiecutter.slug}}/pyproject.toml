@@ -1,0 +1,58 @@
+[project]
+name = "{{ cookiecutter.slug }}"
+version = "0.0.1"
+description = "{{ cookiecutter.summary }}"
+readme = "README.md"
+requires-python = ">=3.6"
+license = "GPL-3.0-or-later"
+authors = [
+    { name = "Natural History Museum", email = "data@nhm.ac.uk" }
+]
+keywords = ["CKAN", "data", "{{ cookiecutter.short_name }}"]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "License :: OSI Approved :: GNU General Public License v3 (GPLv3)",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3 :: Only",
+    "Programming Language :: Python :: 3.6",
+    "Programming Language :: Python :: 3.7",
+    "Programming Language :: Python :: 3.8"
+]
+dependencies = [
+    "ckantools==0.2.0"
+]
+
+[project.optional-dependencies]
+test = [
+    "mock",
+    "pytest>=4.6.5",
+    "pytest-cov>=2.7.1",
+    "coveralls"
+]
+
+[project.urls]
+repository = "https://github.com/NaturalHistoryMuseum/{{ cookiecutter.slug }}"
+changelog = "https://github.com/NaturalHistoryMuseum/{{ cookiecutter.slug }}/blob/main/CHANGELOG.md"
+
+[project.entry-points."ckan.plugins"]
+{{ cookiecutter.short_name } } = "ckanext.{{ cookiecutter.short_name }}.plugin:{{ cookiecutter.class }}Plugin"
+
+
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+
+[tool]
+[tool.setuptools]
+zip-safe = false
+
+[tool.setuptools.packages.find]
+exclude = ["tests"]
+
+[tool.commitizen]
+name = "cz_conventional_commits"
+version = "0.2.0"
+tag_format = "v$version"
+update_changelog_on_bump = true
+changelog_incremental = false

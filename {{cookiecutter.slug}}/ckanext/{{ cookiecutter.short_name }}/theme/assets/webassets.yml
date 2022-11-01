@@ -1,0 +1,7 @@
+main-css:
+  output: {{ cookiecutter.slug }}/%(version)s_{{ cookiecutter.short_name }}.css
+  filters: less
+  config:
+    LESS_BIN: ../../../../../node_modules/less/bin/lessc
+  contents:
+    - less/{{ cookiecutter.short_name }}.less
