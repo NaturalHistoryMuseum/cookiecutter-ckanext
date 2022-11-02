@@ -8,9 +8,9 @@ from ckan.plugins import SingletonPlugin, implements, interfaces, toolkit
 
 
 class {{ cookiecutter.class }}Plugin(SingletonPlugin):
-    '''
+    """
     {{ cookiecutter.summary }}
-    '''
+    """
 
     implements(interfaces.IConfigurer, inherit=True)
 
