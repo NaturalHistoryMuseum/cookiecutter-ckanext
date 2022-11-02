@@ -16,11 +16,6 @@ class {{ cookiecutter.class }}Plugin(SingletonPlugin):
 
     ## IConfigurer
     def update_config(self, config):
-        '''
-
-        :param config:
-
-        '''
-        toolkit.add_template_directory(config, u'theme/templates')
-        toolkit.add_public_directory(config, u'theme/public')
-        toolkit.add_resource(u'theme/assets', u'{{ cookiecutter.slug }}')
+        toolkit.add_template_directory(config, 'theme/templates')
+        toolkit.add_public_directory(config, 'theme/public')
+        toolkit.add_resource('theme/assets', '{{ cookiecutter.slug }}')
