@@ -56,3 +56,17 @@ version = "0.0.1"
 tag_format = "v$version"
 update_changelog_on_bump = true
 changelog_incremental = false
+
+[tool.black]
+line-length = 88
+skip_string_normalization = true
+
+[tool.pylint]
+max-line-length = 88
+disable = ["C0114", "R0903"]
+
+[tool.docformatter]
+wrap-summaries = 88
+wrap-descriptions = 88
+pre-summary-newline = true
+make-summary-multi-line = true
