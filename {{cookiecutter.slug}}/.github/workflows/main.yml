@@ -21,6 +21,6 @@ jobs:
       - name: Run coveralls
         env:
           {% raw %}
-          COVERALLS_REPO_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          COVERALLS_REPO_TOKEN: ${{ secrets.PERSONAL_ACCESS_TOKEN }}
           {% endraw %}
         run: docker-compose run -e COVERALLS_REPO_TOKEN ckan coveralls --service=github
