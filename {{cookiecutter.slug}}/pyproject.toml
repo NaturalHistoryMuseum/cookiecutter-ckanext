@@ -4,7 +4,7 @@ version = "0.0.1"
 description = "{{ cookiecutter.summary }}"
 readme = "README.md"
 requires-python = ">=3.6"
-license = "GPL-3.0-or-later"
+license = {text = "GPL-3.0-or-later"}
 authors = [
     { name = "Natural History Museum", email = "data@nhm.ac.uk" }
 ]
@@ -56,6 +56,9 @@ version = "0.0.1"
 tag_format = "v$version"
 update_changelog_on_bump = true
 changelog_incremental = false
+version_files = [
+    "pyproject.toml:version"
+]
 
 [tool.black]
 line-length = 88
