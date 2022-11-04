@@ -35,7 +35,7 @@ repository = "https://github.com/NaturalHistoryMuseum/{{ cookiecutter.slug }}"
 changelog = "https://github.com/NaturalHistoryMuseum/{{ cookiecutter.slug }}/blob/main/CHANGELOG.md"
 
 [project.entry-points."ckan.plugins"]
-{{ cookiecutter.short_name } } = "ckanext.{{ cookiecutter.short_name }}.plugin:{{ cookiecutter.class }}Plugin"
+{{ cookiecutter.short_name }} = "ckanext.{{ cookiecutter.short_name }}.plugin:{{ cookiecutter.class }}Plugin"
 
 
 [build-system]
