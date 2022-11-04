@@ -13,4 +13,4 @@ RUN pip install -e .[test]
 ENTRYPOINT ["/bin/bash", "/opt/waits/basic.sh"]
 
 # run the tests with coverage output
-CMD ["pytest", "--cov={{ cookiecutter.slug }}", "--ckan-ini=test.ini", "tests"]
+CMD ["pytest", "--cov=ckanext.{{ cookiecutter.short_name }}", "--ckan-ini=test.ini", "tests"]
