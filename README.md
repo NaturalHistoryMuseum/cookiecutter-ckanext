@@ -36,3 +36,7 @@ To make a commit:
 git add .  # or whatever
 cz c
 ```
+
+## Other steps
+
+**Don't forget** to add the secrets: `PERSONAL_ACCESS_TOKEN` (create one [here](https://github.com/settings/tokens?type=beta)) and `COVERALLS_REPO_TOKEN` (get it from the individual coveralls repo page - [here's all the NHM repos](https://coveralls.io/github/NaturalHistoryMuseum)).

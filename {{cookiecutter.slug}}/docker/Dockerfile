@@ -1,4 +1,4 @@
-FROM naturalhistorymuseum/ckantest:0.1
+FROM naturalhistorymuseum/ckantest:0.2
 
 WORKDIR /base/src/{{ cookiecutter.slug }}
 
@@ -13,4 +13,4 @@ RUN pip install -e .[test]
 ENTRYPOINT ["/bin/bash", "/opt/waits/basic.sh"]
 
 # run the tests with coverage output
-CMD ["pytest", "--cov=ckanext.{{ cookiecutter.short_name }}", "--ckan-ini=test.ini", "tests"]
+CMD ["bash", "/opt/scripts/run-tests.sh", "ckanext.{{ cookiecutter.short_name }}"]
