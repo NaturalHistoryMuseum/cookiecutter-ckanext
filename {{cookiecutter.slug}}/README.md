@@ -1,3 +1,4 @@
+<!--header-start-->
 <img src=".github/nhm-logo.svg" align="left" width="150px" height="100px" hspace="40"/>
 
 # {{ cookiecutter.slug }}
@@ -7,6 +8,8 @@
 [![CKAN](https://img.shields.io/badge/ckan-2.9.1-orange.svg?style=flat-square)](https://github.com/ckan/ckan)
 [![Python](https://img.shields.io/badge/python-3.6%20%7C%203.7%20%7C%203.8-blue.svg?style=flat-square)](https://www.python.org/)
 [![Docs](https://img.shields.io/readthedocs/{{ cookiecutter.slug }}?style=flat-square)](https://{{ cookiecutter.slug }}.readthedocs.io)
+<!--header-end-->
+<!--overview-start-->
 
 _{{ cookiecutter.summary }}_
 
@@ -15,7 +18,8 @@ _{{ cookiecutter.summary }}_
 
 {{ cookiecutter.description }}
 
-
+<!--overview-end-->
+<!--installation-start-->
 # Installation
 
 Path variables used below:
@@ -54,7 +58,8 @@ Path variables used below:
   ```ini
   ckan.plugins = ... {{ cookiecutter.short_name }}
   ```
-
+<!--installation-end-->
+<!--configuration-start-->
 # Configuration
 
 These are the options that can be specified in your .ini config file.
@@ -63,11 +68,13 @@ Name|Description|Options
 --|--|--
 |||
 
-
+<!--configuration-end-->
+<!--usage-start-->
 # Usage
 
 
-
+<!--usage-end-->
+<!--testing-start-->
 # Testing
 
 There is a Docker compose configuration available in this repository to make it easier to run tests.
@@ -88,3 +95,4 @@ docker-compose run ckan
 ```
 
 The ckan image uses the Dockerfile in the `docker/` folder.
+<!--testing-end-->
