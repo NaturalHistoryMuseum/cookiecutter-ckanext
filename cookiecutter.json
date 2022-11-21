@@ -7,5 +7,6 @@
   "description": "This is a slightly longer description of what this extension does.",
   "version": "0.0.1",
   "dev_status": ["3 - Alpha", "4 - Beta", "5 - Production/Stable"],
+  "use_less": false,
   "_extensions": ["cookiecutter.extensions.SlugifyExtension"]
 }
