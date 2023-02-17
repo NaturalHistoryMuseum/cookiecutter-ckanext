@@ -69,7 +69,7 @@ name = "cz_nhm"
 version = "{{ cookiecutter.version }}"
 tag_format = "v$version"
 update_changelog_on_bump = true
-changelog_incremental = false
+changelog_incremental = true
 version_files = [
     {% if cookiecutter.contains_js_apps -%}
     "ckanext/{{ cookiecutter.short_name }}/theme/package.json",
