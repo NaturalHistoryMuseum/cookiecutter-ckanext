@@ -13,6 +13,6 @@
   },
   "homepage": "https://github.com/NaturalHistoryMuseum/{{ cookiecutter.slug }}",
   "dependencies": {
-    "less": "^4.1.3"
+    "APP_NAME": "file:assets/scripts/apps/APP_NAME"
   }
 }

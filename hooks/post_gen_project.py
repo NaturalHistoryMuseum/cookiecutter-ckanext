@@ -5,7 +5,7 @@ import os
 import sys
 
 REMOVE_PATHS = [
-    '{% if not cookiecutter.use_less %} package.json {% endif %}'
+    '{% if not cookiecutter.contains_js_apps %} ckanext/{{ cookiecutter.short_name }}/theme/package.json {% endif %}'
 ]
 
 for path in REMOVE_PATHS:

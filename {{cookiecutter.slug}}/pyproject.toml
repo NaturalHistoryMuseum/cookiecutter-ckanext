@@ -71,8 +71,8 @@ tag_format = "v$version"
 update_changelog_on_bump = true
 changelog_incremental = false
 version_files = [
-    {% if cookiecutter.use_less -%}
-    "package.json",
+    {% if cookiecutter.contains_js_apps -%}
+    "ckanext/{{ cookiecutter.short_name }}/theme/package.json",
     {% endif -%}
     "pyproject.toml:version"
 ]

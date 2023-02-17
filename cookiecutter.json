@@ -8,6 +8,7 @@
   "version": "0.0.1",
   "dev_status": ["3 - Alpha", "4 - Beta", "5 - Production/Stable"],
   "use_less": false,
+  "contains_js_apps": false,
   "contains_data_files": false,
   "_extensions": ["cookiecutter.extensions.SlugifyExtension"]
 }
