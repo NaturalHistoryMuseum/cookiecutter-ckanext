@@ -48,3 +48,4 @@ for path in py_files:
 
 with mkdocs_gen_files.open('API/index.md', 'w') as nav_file:
     nav_file.writelines(nav.build_literate_nav())
+
