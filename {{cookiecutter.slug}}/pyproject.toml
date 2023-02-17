@@ -19,7 +19,15 @@ classifiers = [
     "Programming Language :: Python :: 3.8"
 ]
 dependencies = [
-    "ckantools"
+    {% if cookiecutter.contains_data_files -%}
+    "importlib-resources",
+    {% endif -%}
+    {% if cookiecutter.reqs %}
+    {% for r in cookiecutter.reqs.split(' ') -%}
+    "{{ r }}",
+    {% endfor -%}
+    {% endif %}
+    "ckantools>=0.3.0"
 ]
 
 [project.optional-dependencies]
@@ -49,6 +57,12 @@ zip-safe = false
 
 [tool.setuptools.packages.find]
 exclude = ["tests", "docs"]
+
+[tool.setuptools.package-data]
+{% if cookiecutter.contains_data_files -%}
+"ckanext.{{ cookiecutter.short_name }}.data" = ["*", "**/*"]
+{% endif -%}
+"ckanext.{{ cookiecutter.short_name }}.theme" = ["*", "**/*"]
 
 [tool.commitizen]
 name = "cz_nhm"
