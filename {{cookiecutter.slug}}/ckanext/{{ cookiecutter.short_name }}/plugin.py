@@ -7,7 +7,7 @@
 from ckan.plugins import SingletonPlugin, implements, interfaces, toolkit
 
 
-class {{ cookiecutter.class }}Plugin(SingletonPlugin):
+class {{ cookiecutter.class_name }}Plugin(SingletonPlugin):
     """
     {{ cookiecutter.summary }}
     """

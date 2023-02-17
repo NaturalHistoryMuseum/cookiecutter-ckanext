@@ -2,7 +2,7 @@
   "extension_name": "My Extension",
   "short_name": "{{ cookiecutter.extension_name|slugify|replace('-','_') }}",
   "slug": "ckanext-{{ cookiecutter.extension_name|slugify }}",
-  "class": "{{ cookiecutter.short_name|title|replace('_','') }}",
+  "class_name": "{{ cookiecutter.short_name|title|replace('_','') }}",
   "summary": "A CKAN extension that...",
   "description": "This is a slightly longer description of what this extension does.",
   "version": "0.0.1",
