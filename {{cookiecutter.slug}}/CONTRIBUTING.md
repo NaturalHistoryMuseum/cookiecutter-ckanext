@@ -16,8 +16,8 @@ If you're completely new to Git, GitHub, or contributing to open source, you mig
 
 ## Table of contents
 
-1. [About](#about)
-2. [I have a question](#i-have-a-question)
+1. [Introduction](#introduction)
+2. [Questions](#questions)
 3. [Suggestions and bug reports](#suggestions-and-bug-reports)
 4. [Commits and pull requests](#commits-and-pull-requests)
    1. [Commits](#commits)
@@ -25,7 +25,13 @@ If you're completely new to Git, GitHub, or contributing to open source, you mig
    3. [Documentation changes](#documentation-changes)
 
 
-## About
+## Introduction
+
+### Code of Conduct
+
+We have a [Code of Conduct](./CODE_OF_CONDUCT.md), which all contributors and community participants are expected to adhere to.
+
+### About this repository
 
 This repository contains the code for an extension/plugin for a larger system called [CKAN](https://github.com/ckan/ckan); it is not a standalone project.
 
@@ -37,7 +43,8 @@ The current core team consists of:
 - Josh ([@jrdh](https://github.com/jrdh)) - Technical Lead
 - Ginger ([@alycejenni](https://github.com/alycejenni)) - Software Engineer
 
-## I have a question
+
+## Questions
 
 Before asking your question, have you checked:
 - [The README](./README.md)
@@ -75,7 +82,7 @@ The process is generally as follows:
 4. Push your changes back to your fork.
 5. [Open a pull request](https://docs.github.com/en/get-started/quickstart/contributing-to-projects#making-a-pull-request) in this repository, with the base branch set to **dev** and the compare branch set to your new branch. Provide a summary of your changes in the description.
 6. If the automatic tests fail (these may take a while), please go back to your code and try to make them pass. You may have to update the tests themselves. You don't have to close the pull request while you're doing this; it'll update as you add further commits.
-7. Wait for feedback from one of the core maintainers. If it's been a week or so and we haven't responded, we may not have seen it - feel free to [email us](mailto:data@nhm.ac.uk) or [send us a message on Gitter](https://gitter.im/nhm-data-portal/lobby).
+7. Wait for feedback from one of the core maintainers. If it's been a week or so and we haven't responded, we may not have seen it. You can find other places to contact us in [SUPPORT.md](./.github/SUPPORT.md).
 
 ### Commits
 
