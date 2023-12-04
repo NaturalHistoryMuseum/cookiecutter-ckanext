@@ -22,11 +22,11 @@ dependencies = [
     {% if cookiecutter.contains_data_files -%}
     "importlib-resources",
     {% endif -%}
-    {% if cookiecutter.reqs %}
+    {% if cookiecutter.reqs -%}
     {% for r in cookiecutter.reqs.split(' ') -%}
     "{{ r }}",
     {% endfor -%}
-    {% endif %}
+    {% endif -%}
     "ckantools>=0.3.0"
 ]
 
