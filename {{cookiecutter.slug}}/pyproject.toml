@@ -74,7 +74,8 @@ version_files = [
     {% if cookiecutter.contains_js_apps -%}
     "ckanext/{{ cookiecutter.short_name }}/theme/package.json",
     {% endif -%}
-    "pyproject.toml:version"
+    "pyproject.toml:version",
+    "CITATION.cff:^version"
 ]
 
 [tool.black]
