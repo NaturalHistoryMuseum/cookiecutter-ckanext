@@ -27,7 +27,7 @@ dependencies = [
     "{{ r }}",
     {% endfor -%}
     {% endif -%}
-    "ckantools>=0.3.0"
+    "ckantools>=0.4.0"
 ]
 
 [project.optional-dependencies]
