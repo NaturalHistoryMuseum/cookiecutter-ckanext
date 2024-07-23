@@ -22,12 +22,12 @@ dependencies = [
     {% if cookiecutter.contains_data_files -%}
     "importlib-resources",
     {% endif -%}
-    {% if cookiecutter.reqs %}
+    {% if cookiecutter.reqs -%}
     {% for r in cookiecutter.reqs.split(' ') -%}
     "{{ r }}",
     {% endfor -%}
-    {% endif %}
-    "ckantools>=0.3.0"
+    {% endif -%}
+    "ckantools>=0.4.0"
 ]
 
 [project.optional-dependencies]
@@ -74,7 +74,8 @@ version_files = [
     {% if cookiecutter.contains_js_apps -%}
     "ckanext/{{ cookiecutter.short_name }}/theme/package.json",
     {% endif -%}
-    "pyproject.toml:version"
+    "pyproject.toml:version",
+    "CITATION.cff:^version"
 ]
 
 [tool.black]
