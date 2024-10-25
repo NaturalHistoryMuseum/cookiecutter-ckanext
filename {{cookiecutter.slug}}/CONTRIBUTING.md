@@ -142,7 +142,7 @@ cz c
 
 ##### pre-commit
 
-pre-commit is a tool that runs a variety of checks and modifications before a commit is made. You can check the [.pre-commit-config.yaml](./.pre-commit-config.yaml) file to see eaxtly what it's currently configured to do for this repository, but of particular note:
+pre-commit is a tool that runs a variety of checks and modifications before a commit is made. You can check the [.pre-commit-config.yaml](./.pre-commit-config.yaml) file to see exactly what it's currently configured to do for this repository, but of particular note:
 
 - reformats Python code with [Black](https://github.com/psf/black)
 - reformats JavaScript and stylesheets with [Prettier](https://prettier.io)
