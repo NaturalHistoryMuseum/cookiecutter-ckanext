@@ -144,7 +144,7 @@ cz c
 
 pre-commit is a tool that runs a variety of checks and modifications before a commit is made. You can check the [.pre-commit-config.yaml](./.pre-commit-config.yaml) file to see exactly what it's currently configured to do for this repository, but of particular note:
 
-- reformats Python code with [Black](https://github.com/psf/black)
+- reformats Python code with [Ruff](https://docs.astral.sh/ruff)
 - reformats JavaScript and stylesheets with [Prettier](https://prettier.io)
 - reformats docstrings with [docformatter](https://github.com/PyCQA/docformatter)
 - checks your commit message is correcly formatted
@@ -161,15 +161,15 @@ pre-commit run
 
 Don't forget to stage any modifications that it makes! Once it runs without failing, then you can make your commit.
 
-Something to remember is that empty docstrings will cause conflicts between Black and docformatter and the checks will fail repeatedly - so don't leave your docstrings empty!
+Something to remember is that empty docstrings will cause conflicts between Ruff and docformatter and the checks will fail repeatedly - so don't leave your docstrings empty!
 
 ### Code changes and style guide
 
-We generally use external style guides and tools to help us maintain standardised code. Black and Prettier will be run with pre-commit.
+We generally use external style guides and tools to help us maintain standardised code. Ruff and Prettier will be run with pre-commit.
 
 #### Python
 
-We follow the [Black style](https://black.readthedocs.io/en/stable/the_black_code_style/current_style.html), with the notable exception that we use single quotes.
+We use [Ruff](https://docs.astral.sh/ruff) to format our code, using defaults for everything except quote style (we use single quotes).
 
 We also _mostly_ use [CKAN's style](http://docs.ckan.org/en/latest/contributing/python.html), with the following exceptions:
 - prefer `f''` strings over `.format()`
@@ -178,7 +178,7 @@ We also _mostly_ use [CKAN's style](http://docs.ckan.org/en/latest/contributing/
 
 #### JavaScript and stylesheets (CSS, LESS, etc)
 
-We use [Prettier](https://prettier.io) to format these files.
+We use [Prettier](https://prettier.io) to format these files. As with Ruff, we use defaults for everything except quote style (we use single quotes).
 
 #### Accessibility
 
