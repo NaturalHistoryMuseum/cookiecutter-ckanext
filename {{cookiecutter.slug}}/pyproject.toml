@@ -78,9 +78,6 @@ version_files = [
     "CITATION.cff:^version"
 ]
 
-[tool.ruff]
-line-length = 88
-
 [tool.ruff.format]
 quote-style = "single"
 
