@@ -81,7 +81,10 @@ The process is generally as follows:
 3. Make your changes, and commit often; each commit should only contain one change. See below for specifics on how to word your commits.
 4. Push your changes back to your fork.
 5. [Open a pull request](https://docs.github.com/en/get-started/quickstart/contributing-to-projects#making-a-pull-request) in this repository, with the base branch set to **dev** and the compare branch set to your new branch. Provide a summary of your changes in the description.
-6. If the automatic tests fail (these may take a while), please go back to your code and try to make them pass. You may have to update the tests themselves. You don't have to close the pull request while you're doing this; it'll update as you add further commits.
+6. There are several automated checks that will run when you open the pull request. Try to make all of them pass. If you do not at least _attempt_ to make them pass, we will not merge your pull request.
+   1. Tests. Update them so that they pass, if necessary. New tests are always welcome in any pull request, but if you have added a new feature that has decreased the coverage, new tests are required.
+   2. Commit format validation. If you have not followed the conventional commits format for one or more of your commits, this will fail.
+   3. Code format validation. If you have not formatted your code correctly (using Ruff, docformatter, and/or Prettier), this will fail.
 7. Wait for feedback from one of the core maintainers. If it's been a week or so and we haven't responded, we may not have seen it. You can find other places to contact us in [SUPPORT.md](./.github/SUPPORT.md).
 
 ### Commits
