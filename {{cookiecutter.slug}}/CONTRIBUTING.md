@@ -41,7 +41,7 @@ This extension and [several others](https://github.com/search?q=topic:ckan+org:N
 
 The current core team consists of:
 - Josh ([@jrdh](https://github.com/jrdh)) - Technical Lead
-- Ginger ([@alycejenni](https://github.com/alycejenni)) - Software Engineer
+- Ginger ([@alycejenni](https://github.com/alycejenni)) - Senior Software Engineer
 
 
 ## Questions
