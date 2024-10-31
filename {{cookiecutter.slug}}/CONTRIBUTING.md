@@ -125,7 +125,7 @@ We use a few tools to help us with code standardisation and keeping to the conve
 1. [commitizen](https://commitizen-tools.github.io/commitizen)
 2. [pre-commit](https://pre-commit.com)
 
-Both tools are Python-based and can be installed with `pip`. You'll probably want to use something like [pipx](https://pypa.github.io/pipx) or [venv](https://docs.python.org/3/library/venv.html) instead of installing them globally, but for simplicity, the instructions below are just for pip. 
+Both tools are Python-based and can be installed with `pip`. You'll probably want to use something like [pipx](https://pypa.github.io/pipx) or [venv](https://docs.python.org/3/library/venv.html) instead of installing them globally, but for simplicity, the instructions below are just for pip.
 
 ##### commitizen
 
