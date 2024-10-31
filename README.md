@@ -6,7 +6,7 @@ This is a template for NHM CKAN extensions.
 - [commitizen](https://commitizen-tools.github.io/commitizen)
 
 Other relevant tools:
-- [black](https://black.readthedocs.io)
+- [ruff](https://docs.astral.sh/ruff)
 - [docformatter](https://docformatter.readthedocs.io)
 - [pylint](https://pylint.pycqa.org)
 
