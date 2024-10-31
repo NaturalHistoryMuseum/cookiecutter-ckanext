@@ -27,7 +27,7 @@ dependencies = [
     "{{ r }}",
     {% endfor -%}
     {% endif -%}
-    "ckantools>=0.4.0"
+    "ckantools>=0.4.1"
 ]
 
 [project.optional-dependencies]
@@ -78,9 +78,8 @@ version_files = [
     "CITATION.cff:^version"
 ]
 
-[tool.black]
-line-length = 88
-skip_string_normalization = true
+[tool.ruff.format]
+quote-style = "single"
 
 [tool.pylint]
 max-line-length = 88
@@ -91,3 +90,4 @@ wrap-summaries = 88
 wrap-descriptions = 88
 pre-summary-newline = true
 make-summary-multi-line = true
+
