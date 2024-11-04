@@ -3,7 +3,7 @@
 
 # {{ cookiecutter.slug }}
 
-[![Tests](https://img.shields.io/github/actions/workflow/status/NaturalHistoryMuseum/{{ cookiecutter.slug }}/main.yml?style=flat-square)](https://github.com/NaturalHistoryMuseum/{{ cookiecutter.slug }}/actions/workflows/main.yml)
+[![Tests](https://img.shields.io/github/actions/workflow/status/NaturalHistoryMuseum/{{ cookiecutter.slug }}/tests.yml?style=flat-square)](https://github.com/NaturalHistoryMuseum/{{ cookiecutter.slug }}/actions/workflows/tests.yml)
 [![Coveralls](https://img.shields.io/coveralls/github/NaturalHistoryMuseum/{{ cookiecutter.slug }}/main?style=flat-square)](https://coveralls.io/github/NaturalHistoryMuseum/{{ cookiecutter.slug }})
 [![CKAN](https://img.shields.io/badge/ckan-2.9.7-orange.svg?style=flat-square)](https://github.com/ckan/ckan)
 [![Python](https://img.shields.io/badge/python-3.6%20%7C%203.7%20%7C%203.8-blue.svg?style=flat-square)](https://www.python.org/)
