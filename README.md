@@ -6,9 +6,8 @@ This is a template for NHM CKAN extensions.
 - [commitizen](https://commitizen-tools.github.io/commitizen)
 
 Other relevant tools:
-- [ruff](https://docs.astral.sh/ruff)
-- [docformatter](https://docformatter.readthedocs.io)
-- [pylint](https://pylint.pycqa.org)
+- [ruff](https://docs.astral.sh/ruff) (linter and formatter)
+- [docformatter](https://docformatter.readthedocs.io) (docstring formatter)
 
 ## Usage
 To create a new extension using this template:
@@ -25,16 +24,27 @@ git init
 pre-commit install
 ```
 
-To run all the pre-commit hooks manually:
-```shell
-pre-commit run --all-files
-```
-
 To make a commit:
 ```shell
 git add .  # or whatever
 cz c
 ```
+
+The pre-commit hooks will be run automatically. If they fail you can use `cz c --retry`.
+
+### Running pre-commit manually
+
+To run all the pre-commit hooks manually on all files:
+```shell
+pre-commit run --all-files
+```
+
+To run a single hook manually (e.g. ruff formatter) on all files:
+```shell
+pre-commit run ruff-format --all-files
+```
+
+To run hooks on only modified files, omit the `--all-files`.
 
 ## Other steps
 
